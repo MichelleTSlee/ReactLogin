@@ -14,6 +14,11 @@ let notes = [
     title: "My third note",
     details: "Lunch today",
   },
+  {
+    key: 4,
+    title: "My fourth note",
+    details: "Need toast",
+  },
 ];
 
 export default notes;

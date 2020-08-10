@@ -1,21 +1,13 @@
 import React from "react";
-import Header from "./Header";
-import Note from "./Note";
-import Footer from "./Footer";
-import notes from "../notes";
+import Form from "./Form";
+
+let isLoggedIn = false;
+let isRegistered = false;
 
 function App() {
   return (
-    <div>
-      <Header />
-      <div className="flex-container">
-        {notes.map((note) => {
-          return (
-            <Note key={note.id} title={note.title} details={note.details} />
-          );
-        })}
-      </div>
-      <Footer />
+    <div className="container">
+      {isLoggedIn ? <h1> Welcome</h1> : <Form isRegistered={isRegistered} />}
     </div>
   );
 }
